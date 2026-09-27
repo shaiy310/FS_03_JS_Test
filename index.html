@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>JS Test 1</title>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="code.js"></script>
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	</head>
+	<body>
+		<main class="container my-5">
+			<div class="p-5 mb-4 bg-light rounded-3">
+				<div class="container-fluid py-2">
+					<h3 class="col-md-8">Result for: TV screen 75 inch</h3>
+				</div>
+			</div>
+
+            <table class="table table-striped" id="storeTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Icon or image</th>
+                        <th>Name of the store</th>
+                        <th>Address</th>
+                        <th>City</th>
+                        <th>Price</th>
+                        <th>Link of the store</th>
+                        <th>Rating of the place</th>
+                        <th>Options</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><img class="img-fluid" src="https://png.pngtree.com/png-clipart/20190516/original/pngtree-tv-icon-png-image_3568215.jpg" alt="TV Screen 75 inch" width="100"></td>
+                        <td id="storeName">Home Depot</td>
+                        <td>123 Main St</td>
+                        <td>City Name</td>
+                        <td>$1,200</td>
+                        <td><a href="https://example.com" target="_blank">Visit Store</a></td>
+                        <td id="rating">3/5</td>
+                        <td><button class="btn btn-danger delete-btn" type="button">Delete</button> <button class="btn btn-primary buy-btn" type="button">Buy</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><img src="https://www.clipartmax.com/png/middle/41-410289_png-file-tv-icon-vector-png.png" alt="TV Screen 75 inch" width="100"></td>
+                        <td id="storeName">ACE</td>
+                        <td>123 Main St</td>
+                        <td>City Name</td>
+                        <td>$1,200</td>
+                        <td><a href="https://example.com" target="_blank">Visit Store</a></td>
+                        <td id="rating">4/5</td>
+                        <td><button class="btn btn-danger delete-btn" type="button">Delete</button> <button class="btn btn-primary buy-btn" type="button">Buy</button></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><img src="https://www.clipartmax.com/png/middle/41-410289_png-file-tv-icon-vector-png.png" alt="TV Screen 75 inch" width="100"></td>
+                        <td id="storeName">Yaakovi</td>
+                        <td>123 Main St</td>
+                        <td>City Name</td>
+                        <td>$1,200</td>
+                        <td><a href="https://example.com" target="_blank">Visit Store</a></td>
+                        <td id="rating">2/5</td>
+                        <td><button class="btn btn-danger delete-btn" type="button">Delete</button> <button class="btn btn-primary buy-btn" type="button">Buy</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                Average price: <span id="averagePrice"></span>
+                <br>
+                Optimal purchase row: <span id="optimalPurchaseRow"></span>
+                <br>
+                Optimal purchase: <span id="optimalPurchase"></span>
+            </p>
+		</main>
+
+		<footer class="bg-light py-3">
+			<div class="container text-center">
+				<small class="text-muted">© Shai Yaakovi</small>
+			</div>
+		</footer>
+
+		<!-- Bootstrap JS Bundle (includes Popper) -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+	</body>
+</html>
